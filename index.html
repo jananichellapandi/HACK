@@ -3,56 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Message Example</title>
-    <style>
-        /* Style for the popup */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <title>Popup Example</title>
+    <script>
+        // Function to display the popup when the page is loaded
+        window.onload = function() {
+            alert("you are hacked!");
+        };
+    </script>
 </head>
-<body>
-
-<!-- The button to trigger the popup -->
-<button onclick="showPopup()">Click me for a popup</button>
-
-<!-- The overlay and popup message -->
-<div class="overlay" id="overlay"></div>
-<div class="popup" id="popup">
-    <p>This is your popup message!</p>
-    <button onclick="closePopup()">Close</button>
-</div>
-
-<script>
-    // Function to show the popup
-    function showPopup() {
-        document.getElementById("popup").style.display = "block";
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    // Function to close the popup
-    function closePopup() {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("overlay").style.display = "none";
-    }
-</script>
-
-</body>
 </html>
