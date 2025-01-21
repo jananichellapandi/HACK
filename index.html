@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pop up message</title>
+    <title>Direct Pop-up Message</title>
     <script type="text/javascript">
-        // Function to show the popup message
-        function showPopup() {
+        // Function to show the popup message as soon as the page loads
+        window.onload = function() {
             alert("you have been hacked!");
         }
     </script>
 </head>
+<body>
+
+    <h1>Welcome to the Page</h1>
+    <p>The pop-up message will appear as soon as the page loads.</p>
+
+</body>
 </html>
